@@ -22,12 +22,22 @@
     gap: 50px;
     margin-left: 40px;
     margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
 }
 .header_nav {
     text-decoration: none;
     color: black;
     font-family: "Jost", sans-serif;
     font-size: 15px;
+}
+.fenix {
+    width: 45px;
+    height: 45px;
 }
 .intro_div {
     text-align: center;
@@ -45,4 +55,22 @@
 }
 .icons-menu {
     width: 70px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #27e20f;
+    margin: 0;
+    padding: 0 20px 0 20px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+.a-footer {
+    color: white;
+}
+.p-footer {
+    margin: 0;
 }

@@ -1,6 +1,6 @@
 import "react";
 import About from "../images/about-me.png";
-import Projects from "../images/folder-management.png";
+import Projects from "../images/project-management.png";
 import Contact from "../images/contact-me.png";
 
 const Icons = () => {
