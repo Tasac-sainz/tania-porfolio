@@ -1,12 +1,48 @@
-body {
-    background-image: url("../images/background-fix.png");
-    background-size: cover;
-}
 .web-title {
     font-family: "Permanent Marker", sans-serif;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
-    color: white;
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+.web-subtitle {
+    font-family: "Jost";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+.div_nav {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.header_nav {
+    text-decoration: none;
+    color: black;
+    font-family: "Jost", sans-serif;
+    font-size: 15px;
+}
+.intro_div {
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    width: 450px;
+    margin: 0 auto;
+}
+.icons-contain {
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    text-align: center;
+}
+.icons-menu {
+    width: 70px;
 }
