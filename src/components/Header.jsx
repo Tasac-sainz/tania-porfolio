@@ -18,7 +18,9 @@ const Header = () => {
                 <Link to="/contact" className="header_nav">
                     Contacto
                 </Link>
-                <img src={Fenix} alt="logo fenix" className="fenix" />
+                <Link to="/contact">
+                    <img src={Fenix} alt="logo fenix" className="fenix" />
+                </Link>
             </nav>
             <h1 className="web-title">Fenix Web Solutions</h1>
             <h2 className="web-subtitle">Tu página web, sin complicaciones</h2>
