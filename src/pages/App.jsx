@@ -1,19 +1,18 @@
-import "react";
-import Header from "../components/Header";
-import Intro from "../components/Intro";
-import Icons from "../components/Icons";
-import Footer from "../components/Footer";
-import "../styles/app.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
-const App = () => {
+function App() {
     return (
-        <>
-            <Header />
-            <Intro />
-            <Icons />
-            <Footer />
-        </>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+        </Routes>
     );
-};
+}
 
 export default App;

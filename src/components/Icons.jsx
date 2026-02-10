@@ -1,4 +1,5 @@
 import "react";
+import { Link } from "react-router-dom";
 import About from "../images/about-me.png";
 import Projects from "../images/project-management.png";
 import Contact from "../images/contact-me.png";
@@ -8,34 +9,34 @@ const Icons = () => {
         <>
             <div className="icons-contain">
                 <div className="about-contain">
-                    <a href="">
+                    <Link to="/about">
                         <img
                             src={About}
                             alt="about-me"
                             className="icons-menu"
                         />
                         <p>Sobre mí</p>
-                    </a>
+                    </Link>
                 </div>
                 <div className="projects-contain">
-                    <a href="">
+                    <Link to="/projects">
                         <img
                             src={Projects}
                             alt="go to projects"
                             className="icons-menu"
                         />
                         <p>Ver proyectos</p>
-                    </a>
+                    </Link>
                 </div>
                 <div className="contact-contain">
-                    <a href="">
+                    <Link to="/contact">
                         <img
                             src={Contact}
                             alt="contact"
                             className="icons-menu"
                         />
                         <p>Contacto</p>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </>

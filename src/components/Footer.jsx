@@ -1,11 +1,12 @@
 import "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
         <div className="footer">
-            <a href="" className="a-footer">
+            <Link to="/" className="a-footer">
                 Home
-            </a>
+            </Link>
             <p className="p-footer">kaski...keep coding</p>
         </div>
     );
