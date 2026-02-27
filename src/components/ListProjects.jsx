@@ -53,7 +53,7 @@ const ListProjects = () => {
             features:
                 "Publicación de proyecto, consulta de listado de proyectos, vista de detalle con enlaces a la demo del proyecto y al perfil de GitHub de su autor/a.",
             techs: ["react", "node", "postman", "mysql", "css", "git"],
-            web: "https://project-promo-55-module-4-team-1.onrender.com", //no funciona el enlace de proyectos//
+            web: "https://cool-projects.onrender.com",
         },
     ];
     return (
