@@ -69,6 +69,7 @@
 }
 .intro_div {
     text-align: center;
+    font-size: 14px;
     font-style: normal;
     width: 75%;
     margin: 0 auto;
@@ -77,11 +78,12 @@
     padding: 50px;
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 30px;
     text-align: center;
+    font-size: 14px;
 }
 .icons-menu {
-    width: 70px;
+    width: 55px;
 }
 
 .footer {
@@ -109,13 +111,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
     gap: 20px;
-    padding-left: 50px;
 }
 .my-descr {
-    width: 600px;
+    width: 90%;
     text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    white-space: normal;
 }
 .text-link {
     color: #268919;
@@ -124,8 +128,8 @@
 
 .profile-pic {
     border-radius: 100px;
-    width: 180px;
-    height: 190px;
+    width: 120px;
+    height: 165px;
 }
 
 @media screen and (min-width: 736px) {
@@ -162,5 +166,27 @@
     }
     .icons-contain {
         padding: 70px;
+        font-size: 16px;
+    }
+    .icons-contain {
+        gap: 60px;
+    }
+    .icons-menu {
+        width: 70px;
+    }
+
+    .intro_div {
+        font-size: 16px;
+    }
+    .profile-pic {
+        border-radius: 100px;
+        width: 185px;
+        height: 250px;
+    }
+    .my-descr {
+        font-size: 16px;
+    }
+    .about-content {
+        padding: 0 0 100px 50px;
     }
 }
