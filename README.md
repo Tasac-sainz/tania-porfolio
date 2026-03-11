@@ -1,4 +1,4 @@
-# Portfolio Tania Sachanandani
+# Portfolio Tania S. Sainz de Aja
 
 Bienvenid@ a mi portfolio!!! 
 
