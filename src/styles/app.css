@@ -281,18 +281,22 @@
 
     .intro_div {
         font-size: 16px;
+        margin-bottom: 50px;
     }
     .profile-pic {
         border-radius: 100px;
         width: 185px;
         height: 250px;
+        margin-left: 60px;
     }
     .my-descr {
         font-size: 16px;
-        padding: 0 250px 0 250px;
+        padding: 0 150px 0 150px;
     }
     .about-content {
         padding: 0 0 100px 50px;
+        flex-wrap: nowrap;
+        align-items: center;
     }
     .link-to {
         display: flex;

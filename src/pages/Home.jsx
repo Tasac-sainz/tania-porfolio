@@ -14,12 +14,13 @@ const Home = () => {
         <>
             <Header />
             <Intro />
-            <Icons />
+
             <img
                 src={ProgrammingImg}
                 alt="es una mujer de espaldas, programando"
                 className="programming"
             />
+            <Icons />
             <AboutComp />
             <ProjectsComp />
             <ContactComp />

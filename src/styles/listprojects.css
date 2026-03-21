@@ -12,6 +12,11 @@
     gap: 20px;
     -webkit-overflow-scrolling: touch;
 }
+.scroll-p {
+    margin: 5px 0 0 30px;
+    font-size: 12px;
+    font-weight: 500;
+}
 .list-container {
     display: flex;
     flex-direction: row;
@@ -36,16 +41,52 @@
     background: linear-gradient(
         to top left,
         rgb(156, 224, 174),
-        rgba(94, 179, 100, 0.824)
+        rgba(90, 216, 98, 0.65)
     );
     border-radius: 18px;
 }
-
+.pic-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.proj-img {
+    width: 80%;
+    height: 150px;
+    border-radius: 15px;
+}
+.resume {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 450;
+}
 .nameproj-cont {
     font-weight: 700;
     font-style: italic;
     width: 75%;
     font-size: 15px;
+}
+.hover-area {
+    position: relative;
+    min-height: 150px;
+}
+.pic-cont,
+.card-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+.card-text {
+    opacity: 0;
+}
+.hover-area:hover .pic-cont {
+    opacity: 0;
+}
+
+.hover-area:hover .card-text {
+    opacity: 1;
 }
 .descrip-cont {
     font-size: 14px;
@@ -59,7 +100,8 @@
 .techs-cont {
     display: flex;
     justify-content: center;
-    padding: 15px 0 15px 0;
+    padding-top: 15px;
+    margin-top: 15px;
 }
 .tech-icon {
     width: 10%;
@@ -76,7 +118,6 @@
 .project-image {
     width: 75%;
     position: relative;
-    z-index: -1;
 }
 @media screen and (min-width: 736px) {
     .list-container {
@@ -92,6 +133,9 @@
     .card {
         width: 40%;
         height: auto;
+    }
+    .scroll-p {
+        display: none;
     }
     .website-cont {
         font-size: 16px;

@@ -12,6 +12,8 @@ import CSSicon from "../images/css-icon.png";
 import MySQL from "../images/mysql-icon.png";
 import CoolImg from "../images/cool-projects.png";
 import EcomImg from "../images/ecommerce-page.png";
+import HarryImg from "../images/harry-page.png";
+import RecipesImg from "../images/recipes-page.png";
 import "../styles/listprojects.css";
 
 const ListProjects = () => {
@@ -29,6 +31,7 @@ const ListProjects = () => {
     const projects = [
         {
             nameproj: "All for You",
+            resume: "e-commerce",
             description:
                 "Web de ecommerce desarrollada con JavaScript puro con diseño responsive, apto para el uso de distintos dispositivos.",
             features:
@@ -36,10 +39,11 @@ const ListProjects = () => {
             techs: ["js", "api", "sass", "css"],
             web: "https://tasac-sainz.github.io/tienda-online-all-for-you/",
             repo: "https://github.com/Tasac-sainz/tienda-online-all-for-you",
-            pic: { CoolImg },
+            pic: EcomImg,
         },
         {
             nameproj: "Recetas Four for Love",
+            resume: "Base de Datos de Recetas con autenticación de usuarios",
             description:
                 "Web con recetas familiares en las que los usuarios pueden registrarse, añadir nuevas recetas y consultar sus propias recetas desde cualquier lugar del mundo. Desarrollada con React y NodeJS.",
             features:
@@ -47,9 +51,11 @@ const ListProjects = () => {
             techs: ["react", "node", "postman", "mysql", "css"],
             web: "https://github.com/Tasac-sainz/recetas-four-for-love.git",
             repo: "https://github.com/Tasac-sainz/recetas-four-for-love",
+            pic: RecipesImg,
         },
         {
             nameproj: "Cool Projects",
+            resume: "Base de Datos de Proyectos Tecnológicos",
             description:
                 "Proyecto Full Stack para publicar proyectos de desarrollo web y darles visibilidad añadiendo imágenes, tecnologías, descripción y datos de autoría, desarrollada con React y NodeJS, despliegue con Render.com",
             features:
@@ -57,10 +63,11 @@ const ListProjects = () => {
             techs: ["react", "node", "postman", "mysql", "css"],
             web: "https://cool-projects.onrender.com",
             repo: "https://github.com/Tasac-sainz/cool-projects",
-            pic: { EcomImg },
+            pic: CoolImg,
         },
         {
-            nameproj: "Buscador en API de Personajes de Harry Potter",
+            nameproj: "Buscador de Harry Potter",
+            resume: "API Rest de búsqueda de personajes y página de detalle",
             description:
                 "Este proyecto se orienta a la búsqueda de personajes de Harry Potter y visualización de cada persona en detalle a través de una API Rest. Desarrollada con React.",
             features:
@@ -68,11 +75,13 @@ const ListProjects = () => {
             techs: ["react", "api", "css"],
             web: "http://tasac-sainz.github.io/buscador_harry-potter/",
             repo: "https://github.com/Tasac-sainz/buscador_harry-potter",
+            pic: HarryImg,
         },
     ];
     return (
         <>
             <h1 className="project-title">Algunos de mis trabajos...</h1>
+
             <div className="scroll-container">
                 <ul className="list-container">
                     {projects.map((project, i) => (
@@ -106,16 +115,28 @@ const ListProjects = () => {
                                     </a>
                                 </div>
                             </div>
-                            <div className="descrip-cont">
-                                {project.description}
-                            </div>
-                            <div className="feature-cont">
-                                <img
-                                    src={FeatureIcon}
-                                    alt="Funcionalidades"
-                                    className="listproject-icon"
-                                />{" "}
-                                {project.features}
+                            <div className="hover-area">
+                                <div className="pic-cont">
+                                    <img
+                                        src={project.pic}
+                                        alt="imagen del proyecto"
+                                        className="proj-img"
+                                    />
+                                    <p className="resume">{project.resume}</p>
+                                </div>
+                                <div className="card-text">
+                                    <div className="descrip-cont">
+                                        {project.description}
+                                    </div>
+                                    <div className="feature-cont">
+                                        <img
+                                            src={FeatureIcon}
+                                            alt="Funcionalidades"
+                                            className="listproject-icon"
+                                        />{" "}
+                                        {project.features}
+                                    </div>{" "}
+                                </div>
                             </div>
                             <div className="techs-cont">
                                 {project.techs &&
@@ -132,6 +153,7 @@ const ListProjects = () => {
                     ))}
                 </ul>
             </div>
+            <h4 className="scroll-p">Desliza para ver más 👉🏼</h4>
         </>
     );
 };
