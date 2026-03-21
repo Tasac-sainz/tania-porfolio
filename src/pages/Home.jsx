@@ -6,6 +6,7 @@ import AboutComp from "../components/AboutComponent";
 import ProjectsComp from "../components/ProjectsComponent";
 import ContactComp from "../components/ContactComponent";
 import Footer from "../components/Footer";
+import ProgrammingImg from "../images/programming.png";
 import "../styles/app.css";
 
 const Home = () => {
@@ -14,6 +15,11 @@ const Home = () => {
             <Header />
             <Intro />
             <Icons />
+            <img
+                src={ProgrammingImg}
+                alt="es una mujer de espaldas, programando"
+                className="programming"
+            />
             <AboutComp />
             <ProjectsComp />
             <ContactComp />

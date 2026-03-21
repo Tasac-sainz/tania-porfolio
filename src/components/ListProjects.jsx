@@ -10,7 +10,8 @@ import Postman from "../images/postman-icon.png";
 import React from "../images/react-icon.png";
 import CSSicon from "../images/css-icon.png";
 import MySQL from "../images/mysql-icon.png";
-
+import CoolImg from "../images/cool-projects.png";
+import EcomImg from "../images/ecommerce-page.png";
 import "../styles/listprojects.css";
 
 const ListProjects = () => {
@@ -35,6 +36,7 @@ const ListProjects = () => {
             techs: ["js", "api", "sass", "css"],
             web: "https://tasac-sainz.github.io/tienda-online-all-for-you/",
             repo: "https://github.com/Tasac-sainz/tienda-online-all-for-you",
+            pic: { CoolImg },
         },
         {
             nameproj: "Recetas Four for Love",
@@ -55,6 +57,7 @@ const ListProjects = () => {
             techs: ["react", "node", "postman", "mysql", "css"],
             web: "https://cool-projects.onrender.com",
             repo: "https://github.com/Tasac-sainz/cool-projects",
+            pic: { EcomImg },
         },
         {
             nameproj: "Buscador en API de Personajes de Harry Potter",

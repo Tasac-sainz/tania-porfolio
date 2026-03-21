@@ -135,8 +135,8 @@
 }
 
 .fenix {
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
 }
 .intro_div {
     text-align: center;
@@ -146,15 +146,30 @@
     margin: 0 auto;
 }
 .icons-contain {
-    padding: 50px;
+    margin: 50px;
+    padding: 10px 5px;
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-around;
+    gap: 20px;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
+    border-radius: 80px;
+    position: relative;
+    z-index: 10;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 .icons-menu {
-    width: 55px;
+    width: 45px;
+}
+.icon-text {
+    margin: 0;
+}
+
+.programming {
+    display: none;
+    border-radius: 5px;
+    margin-bottom: 50px;
 }
 
 .footer {
@@ -245,14 +260,23 @@
         gap: 100px;
     }
     .icons-contain {
-        padding: 70px;
+        padding: 20px;
         font-size: 16px;
-    }
-    .icons-contain {
+        margin: 80px;
+        margin-top: 50px;
         gap: 60px;
+        border-radius: 80px;
+        position: relative;
+        z-index: 10;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     }
     .icons-menu {
         width: 70px;
+    }
+    .icon-text {
+        align-self: center;
     }
 
     .intro_div {
@@ -269,5 +293,15 @@
     }
     .about-content {
         padding: 0 0 100px 50px;
+    }
+    .link-to {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .programming {
+        display: flex;
+        height: 500px;
+        width: 100%;
     }
 }

@@ -9,33 +9,33 @@ const Icons = () => {
         <>
             <div className="icons-contain">
                 <div className="about-contain">
-                    <Link to="/about">
+                    <Link to="/about" className="link-to">
                         <img
                             src={About}
                             alt="about-me"
                             className="icons-menu"
                         />
-                        <p>Sobre mí</p>
+                        <p className="icon-text">Sobre mí</p>
                     </Link>
                 </div>
                 <div className="projects-contain">
-                    <Link to="/projects">
+                    <Link to="/projects" className="link-to">
                         <img
                             src={Projects}
                             alt="go to projects"
                             className="icons-menu"
                         />
-                        <p>Ver proyectos</p>
+                        <p className="icon-text">Ver proyectos</p>
                     </Link>
                 </div>
                 <div className="contact-contain">
-                    <Link to="/contact">
+                    <Link to="/contact" className="link-to">
                         <img
                             src={Contact}
                             alt="contact"
                             className="icons-menu"
                         />
-                        <p>Contacto</p>
+                        <p className="icon-text">Contacto</p>
                     </Link>
                 </div>
             </div>

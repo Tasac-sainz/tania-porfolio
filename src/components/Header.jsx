@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Burger from "../images/burger.png";
-import Fenix from "../images/fenix_redondo_blanco.png";
+import FenixV from "../images/fenix-verde.png";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -54,7 +54,7 @@ const Header = () => {
                     target="_blank"
                 >
                     <img
-                        src={Fenix}
+                        src={FenixV}
                         alt="visitar perfil en Linked In"
                         className="fenix"
                     />
